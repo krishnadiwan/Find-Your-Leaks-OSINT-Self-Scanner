@@ -3,5 +3,5 @@ requests                   # HTTP requests for other scanners
 fpdf                       # PDF generation
 Pillow                     # Required by fpdf for image handling (QR codes)
 exifread                   # For metadata scanner
-sherlock-usernames @ git+https://github.com/sherlock-project/sherlock.git  # Username scanner
 qrcode[pil]                # For generating QR codes in PDF reports
+piexif
