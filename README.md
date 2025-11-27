@@ -1,52 +1,105 @@
-🔍 Find Your Leaks — OSINT Self-Scanner
-Kali Linux Installation Guide (with PhoneInfoga + Streamlit App)
+Here is a clean, ready-to-use **README.md** based on your latest commands, tailored for **Kali Linux**.
 
-This guide explains how to install PhoneInfoga, clone the OSINT Self-Scanner repository, set up a Python virtual environment, install dependencies, and run the Streamlit app on Kali Linux.
+---
 
-📦 Requirements
+# 🔍 Find Your Leaks — OSINT Self-Scanner
 
-Kali Linux (or any Debian-based Linux)
+### Kali Linux Installation Guide (with PhoneInfoga + Streamlit App)
 
-Python 3.8+
+This guide explains how to install **PhoneInfoga**, clone the OSINT Self-Scanner repository, set up a Python virtual environment, install dependencies, and run the Streamlit app on **Kali Linux**.
 
-pip3
+---
 
-git
+## 📦 Requirements
 
-curl
+* Kali Linux (or any Debian-based Linux)
+* Python **3.8+**
+* `pip3`
+* `git`
+* `curl`
+* Internet connection
 
-Internet connection
+---
 
-🛠 Step 1 — Install PhoneInfoga
+## 🛠 Step 1 — Install PhoneInfoga
 
 Run the official installer script:
 
+```bash
 bash <( curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install )
+```
 
+Install PhoneInfoga into `/usr/local/bin`:
 
-Install PhoneInfoga into /usr/local/bin:
-
+```bash
 sudo install ./phoneinfoga /usr/local/bin/phoneinfoga
-
+```
 
 Verify installation:
 
+```bash
 ./phoneinfoga version
+```
 
-📥 Step 2 — Clone the OSINT Self-Scanner Repository
+---
+
+## 📥 Step 2 — Clone the OSINT Self-Scanner Repository
+
+```bash
 git clone https://github.com/krishnadiwan/Find-Your-Leaks-OSINT-Self-Scanner.git
 cd Find-Your-Leaks-OSINT-Self-Scanner
+```
 
-🐍 Step 3 — Create & Activate Python Virtual Environment
+---
+
+## 🐍 Step 3 — Create & Activate Python Virtual Environment
+
+```bash
 python3 -m venv myenv
 source myenv/bin/activate
+```
 
-📚 Step 4 — Install Required Python Packages
+---
 
-IMPORTANT: You wrote requiremetnts.txt — ensure the file is actually named
-requirements.txt or change the command accordingly.
+## 📚 Step 4 — Install Required Python Packages
 
+> **IMPORTANT:** You wrote `requiremetnts.txt` — ensure the file is actually named
+> **`requirements.txt`** or change the command accordingly.
+
+```bash
 pip3 install -r requirements.txt
+```
 
-▶️ Step 5 — Run the Streamlit App
+---
+
+## ▶️ Step 5 — Run the Streamlit App
+
+```bash
 streamlit run app.py
+```
+
+This starts the app on:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📝 Notes
+
+* To deactivate the virtual environment:
+
+  ```bash
+  deactivate
+  ```
+* If Streamlit does not open automatically, copy the URL into your browser.
+
+---
+
+If you want, I can also add:
+✅ Screenshots
+✅ Project description
+✅ Features list
+✅ Troubleshooting section
+Just tell me!
