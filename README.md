@@ -97,9 +97,4 @@ http://localhost:8501
 
 ---
 
-If you want, I can also add:
-✅ Screenshots
-✅ Project description
-✅ Features list
-✅ Troubleshooting section
-Just tell me!
+
